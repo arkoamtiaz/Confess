@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    position: relative;
+    box-shadow: 10px 10px 90px #f20044;
+    animation: animHeart 0.3s linear infinite;
+}
+
+@keyframes animHeart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(.8);
+
+    }
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    box-shadow: -10px 10px 90px #f20044;
+    top: -50%;
+    border-radius: 50%;
+}
+
+.heart::after {
+
+    content: '';
+    position: absolute;
+    box-shadow: 10px -10px 90px #f20044;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50%;
+}
+.button{
+  margin: 100px 50px 75px 120px;
+  font-size: 30px;
+  border-radius: 15px;
+  background-color:#DDA0DD;
+}
+#text1{
+      height: 400px;
+      width: 600px;
+      //color:green;
+      //background-color:pink;
+      border-radius:10%;
+      background-image:url("https://st3.depositphotos.com/1001941/13902/v/600/depositphotos_139023582-stock-illustration-young-couple-for-valentines-day.jpg");
+}
+#text2{
+      margin:0px 0px 0px 20px;
+      color:black;
+      height:400px;
+      width:400px;
+      box-sizing:border-box;
+      border-radius:10%;
+      background-color: pink;
+      text-align:justify;
+      justify-content:center;
+    padding: 10px 50px 10px 50px;
+}
+.message{
+  margin: 20px 0px 0px 0px;
+  /*padding: 30px ;*/
+  font-size:20px;
+  /*font-family: 'georgia';*/
+}
+h4{
+  color: rebeccapurple;
+}
+.but{
+  margin-top:30px;
+  margin-left:250px;
+  font-size:20px;
+  border-radius:15%;
+  background-color:#5dbea3;
+}
